@@ -1,0 +1,14 @@
+<div>
+	<ng-container [ngSwitch]="renderMethod">
+
+		<div *ngSwitchCase="PopupContentRenderMethod.Text" [innerHTML]="content"></div>
+
+		<ng-container *ngSwitchCase="PopupContentRenderMethod.Template">
+			<ng-container *ngTemplateOutlet="content; context: context"></ng-container>
+		</ng-container>
+
+		<ng-container *ngSwitchCase="PopupContentRenderMethod.Component">
+			<ng-container *ngComponentOutlet="content"></ng-container>
+		</ng-container>
+	</ng-container>
+</div>

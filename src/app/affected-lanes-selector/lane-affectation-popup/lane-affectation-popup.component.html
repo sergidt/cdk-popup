@@ -1,0 +1,12 @@
+<button mat-button class="affectation-button"
+				*ngIf="popupData.showDeleteButton"
+				(click)="close()">
+	<mat-icon>delete</mat-icon>
+</button>
+
+<button mat-button class="affectation-button"
+				*ngFor="let affectationType of popupData.laneAffectationTypes"
+				(click)="close(affectationType)">
+	<mat-icon [ngStyle]="{'color': affectationType.color}"
+						[ngClass]="affectationType.icon">{{affectationType.icon}}</mat-icon>
+</button>

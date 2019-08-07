@@ -1,0 +1,25 @@
+.affectation--trigger {
+  max-width: 48px !important;
+}
+
+.lanes-affectation-editor {
+  display: inline-flex;
+}
+
+.affectation-button {
+  background-color: #EDEDED;
+  min-width: 0;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 0 !important;
+}
+
+.arrow_forward {
+  transform: rotate(-45deg);
+}
+
+.arrow_back {
+  transform: rotate(45deg);
+}
+
